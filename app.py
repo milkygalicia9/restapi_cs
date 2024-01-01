@@ -65,7 +65,8 @@ class ItemResource(Resource):
 
         return {"message": "Item deleted successfully"}
 
-api.add_resource(ItemResource, '/api/item/<int:item_id>')  # Adjust the route to /api/item
+api.add_resource(ItemResource, '/api/item/<int:item_id>')
+
 
 if __name__ == '__main__':
     app.run(debug=True)
